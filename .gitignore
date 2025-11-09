@@ -133,3 +133,4 @@ data/
 # Coverage and test reports
 .coverage
 htmlcov/
+.assistant_prefs.json
