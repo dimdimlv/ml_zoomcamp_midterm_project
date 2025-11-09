@@ -82,7 +82,7 @@ It is a **binary classification problem** with target variable `Revenue` (1 = pu
 ## 5. Installation & Usage
 
 ### Prerequisites
-- Python 3.10 or higher
+- Python 3.13 or higher
 - [uv](https://github.com/astral-sh/uv) - Fast Python package installer and resolver
 
 ### Quick Start (Automated Setup)
