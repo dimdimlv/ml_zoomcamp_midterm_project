@@ -80,6 +80,11 @@ Pipfile.lock
 # poetry
 poetry.lock
 
+# uv
+# Note: uv.lock should be committed for reproducibility
+# Only ignore it if you want team members to resolve dependencies independently
+# uv.lock
+
 # virtualenv
 venv/
 .venv/

@@ -1,0 +1,58 @@
+[project]
+name = "ml-zoomcamp-midterm-project"
+version = "0.1.0"
+description = "This project predicts whether a website visitor will make a purchase during an online shopping session."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "dimdimlv" }
+]
+
+dependencies = [
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+    "pytest>=9.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+]
+
+web = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.4.0",
+]
+
+ml = [
+    "xgboost>=2.0.0",
+    "lightgbm>=4.1.0",
+    "shap>=0.43.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311', 'py312', 'py313']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
