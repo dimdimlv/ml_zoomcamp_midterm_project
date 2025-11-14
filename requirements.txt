@@ -1,0 +1,14 @@
+# Core ML dependencies
+numpy>=2.3.4
+pandas>=2.3.3
+scikit-learn>=1.7.2
+imbalanced-learn>=0.12.0
+xgboost>=2.0.0
+
+# Web API dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.4.0
+
+# For testing the API
+requests>=2.31.0
